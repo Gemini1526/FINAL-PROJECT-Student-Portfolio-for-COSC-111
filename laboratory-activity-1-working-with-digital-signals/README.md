@@ -39,5 +39,3 @@ This creates a visible representation of digital signal changes over time.
 - Digital simulation tools (optional)
 
 
-## Author
-**John Michael B. Tulalian**
