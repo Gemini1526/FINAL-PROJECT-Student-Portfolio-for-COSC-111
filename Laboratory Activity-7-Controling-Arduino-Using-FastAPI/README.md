@@ -1,48 +1,46 @@
-Laboratory Activity #4
-Arduino Serial Connection Using FastAPI
+# Laboratory Activity #4
+## Arduino Serial Connection Using FastAPI
 
-Course: COSC 111 – Internet of Things
+### Course
+**COSC 111 – Internet of Things**
 
-📌 Objective
+---
 
-To demonstrate Serial communication between an Arduino and a FastAPI web application for remotely controlling LEDs.
+## Description
 
-📖 Description
+In this laboratory activity, Serial communication between an Arduino microcontroller and a FastAPI web application is explored. The activity demonstrates how digital outputs can be controlled remotely using web-based API requests.
 
-This project connects an Arduino to a FastAPI-based Python application using Serial communication. The FastAPI server sends control commands through API endpoints, allowing LEDs connected to the Arduino to be turned ON, OFF, or toggled individually.
+By integrating Arduino hardware with a Python-based FastAPI server, the system allows LEDs to be turned **ON**, **OFF**, or **toggled** through Serial commands. This activity highlights the interaction between hardware and software, reinforcing fundamental Internet of Things (IoT) concepts.
 
-This project demonstrates basic Internet of Things (IoT) concepts by integrating hardware control with web-based APIs.
+---
 
-⚙️ Features
+## Activity Overview
 
-Serial communication between Arduino and FastAPI
+The Arduino and FastAPI system performs the following tasks:
 
-Web API endpoints for LED control
+- Establishes Serial communication between Arduino and computer
+- Uses FastAPI to create web-based control endpoints
+- Sends single-character commands to Arduino
+- Controls multiple LEDs (Red, Green, Blue)
+- Demonstrates remote device control using a web API
 
-Turn all LEDs ON or OFF
+---
 
-Toggle individual LEDs (Red, Green, Blue)
+## Components Used
 
-🧰 Components Used
+- Arduino Uno (or compatible board)
+- Red, Green, and Blue LEDs
+- Resistors
+- Breadboard
+- Jumper wires
+- Computer with Python installed
+- Arduino IDE
+- FastAPI framework
 
-Arduino Uno
+---
 
-Red, Green, and Blue LEDs
+## Serial Configuration
 
-Resistors
-
-Breadboard and jumper wires
-
-Computer with Python and FastAPI
-
-Arduino IDE
-
-🔌 Serial Configuration
+```python
 SERIAL_PORT = "COM3"
 BAUD_RATE = 9600
-
-🎮 Command Reference
-Command	Action
-R / G / B	Turn LED ON
-r / g / b	Turn LED OFF
-1 / 2 / 3	Toggle LED
