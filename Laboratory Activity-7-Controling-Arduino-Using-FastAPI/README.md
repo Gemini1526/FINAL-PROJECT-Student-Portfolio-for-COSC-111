@@ -1,4 +1,4 @@
-# Laboratory Activity #4
+# Laboratory Activity #7
 ## Arduino Serial Connection Using FastAPI
 
 ### Course
